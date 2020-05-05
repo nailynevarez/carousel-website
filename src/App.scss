@@ -19,23 +19,49 @@ $xxl: 1900px; // Double Extra large screens / wide monitor
 @mixin xxl { @media (min-width: #{$xxl}) {@content;}}
 
 
-html {
-  height: 100vh;
-  width: 100vw;
-}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
-body {
-  height: 100vh;
-  width: 100vw;
-}
 
-.Wrapper {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@-o-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 
 
@@ -57,11 +83,11 @@ body {
     height: $item-size;
 
     $angle: (218 / $item-count);
-    $rot: 328;
+    $rot: 322;
 
     @for $i from 1 through $item-count {
       &:nth-of-type(#{$i}) {
-        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate(35deg);
+        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate(40deg);
       }
 
       $rot: $rot + $angle;
@@ -71,12 +97,124 @@ body {
 
 
 
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  pointer-events: auto;
+}
+
+.opacityUp {
+  opacity: 1;
+  position: absolute;
+  transition: .3s;
+}
+
+.opacityDown {
+  opacity: .08;
+  position: absolute;
+    transition: .3s;
+}
+
+
+.fadeIn {
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2;
+  -o-animation: fadeIn 2s;
+  animation: fadeIn 2s; }
+
+
+
+.fadeOut {
+  -webkit-animation: fadeOut .5s forwards;
+  -moz-animation: fadeOut .5s forwards;
+  -o-animation: fadeOut .5s forwards;
+  animation: fadeOut .5s forwards; }
+
+
+.fadeInQuick {
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    animation: fadeIn 1s; }
+
+
+
+  .fadeOutQuick {
+    -webkit-animation: fadeOut .5s forwards;
+    -moz-animation: fadeOut .5s forwards;
+    -o-animation: fadeOut .5s forwards;
+    animation: fadeOut .5s forwards; }
+
+
+.Logo-Wrapper{
+  -webkit-animation: rotateLogo 80s infinite linear;
+   -moz-animation: rotateLogo 80s infinite linear;
+   -o-animation: rotateLogo 80s infinite linear;
+  animation: rotateLogo 80s infinite linear;
+}
+
+
+
+
+@-webkit-keyframes rotateLogo  {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@-moz-keyframes rotateLogo  {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes rotateLogo  {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotateLogo  {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+
+.Wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+
+
 
 .Trapezoid-Wrapper {
 
   @include sm {
     position: relative;
-    @include on-circle($item-count: 13, $circle-size: 15em, $item-size: 2.8em);
+    @include on-circle($item-count: 13, $circle-size: 15em, $item-size: 2.0em);
     img {
       transition: .5s;
       max-width: 55px;
@@ -84,27 +222,32 @@ body {
       width: auto;
       height: auto;
       &:hover {
-        opacity: .3;
+        opacity: .2;
       }
     }
   }
   @include md {
-
+    @include on-circle($item-count: 13, $circle-size: 22em, $item-size: 2.8em);
+    img {
+      max-width: 82.5px;
+      max-height: 82.5px;
+    }
   }
 }
 
 
 .Name-Wrapper {
   @include sm {
+      cursor: pointer;
       position: absolute;
       img {
         height: auto;
         width: auto;
-        max-width: 240px;
-        max-height: 240px;
+        max-width: 247px;
+        max-height: 247px;
         transition: .3s;
-        margin-top: -12%;
-        margin-left: -8%;
+        margin-top: -13%;
+        margin-left: -13%;
         &:hover {
           opacity: .3;
         }
@@ -112,7 +255,45 @@ body {
   }
 
   @include md {
-
-
+    img {
+      max-width: 365px;
+      max-height: 365px;
+      margin-top: -14%;
+      margin-left: -13.5%;
+    }
   }
 }
+
+.About-Wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  cursor: pointer;
+  p {
+    @include sm {
+      text-align: center;
+      font-size: 1.2em;
+      margin: 0 10% 0% 10%;
+    }
+
+    @include md {
+      font-size: 1.6em;
+      margin: 0 15% 0% 15%;
+    }
+
+    @include lg {
+      font-size: 1.6em;
+      margin: 0 20% 0% 20%;
+    }
+
+    @include xl {
+      font-size: 1.6em;
+      margin: 0 28% 0% 28%;
+    }
+
+  }
+  }
