@@ -18,6 +18,8 @@ $xxl: 1900px; // Double Extra large screens / wide monitor
 @mixin xl { @media (min-width: #{$xl}) {@content;}}
 @mixin xxl { @media (min-width: #{$xxl}) {@content;}}
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
 
 @-webkit-keyframes fadeIn {
   from {
@@ -106,6 +108,7 @@ body {
   height: 100vh;
   width: 100vw;
   pointer-events: auto;
+font-family: 'Barlow Condensed', sans-serif;
 }
 
 .opacityUp {
@@ -156,6 +159,7 @@ body {
    -moz-animation: rotateLogo 80s infinite linear;
    -o-animation: rotateLogo 80s infinite linear;
   animation: rotateLogo 80s infinite linear;
+      position: absolute;
 }
 
 
@@ -222,7 +226,7 @@ body {
       width: auto;
       height: auto;
       &:hover {
-        opacity: .2;
+        opacity: .3;
       }
     }
   }
@@ -296,4 +300,20 @@ body {
     }
 
   }
+  }
+
+  .Artist-Wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: #2a2a2a;
+    justify-content: center;
+    align-content: center;
+
+  }
+
+
+
+  .Name1 {
+    align-self: center;
   }

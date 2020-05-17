@@ -23,6 +23,19 @@ export default class App extends Component {
       homeActive: true,
       showAbout: false,
       showText: false,
+      isHover1: false,
+      isHover2: false,
+      isHover3: false,
+      isHover4: false,
+      isHover5: false,
+      isHover6: false,
+      isHover7: false,
+      isHover8: false,
+      isHover9: false,
+      isHover10: false,
+      isHover11: false,
+      isHover12: false,
+      isHover13: false,
     };
   }
 
@@ -57,21 +70,73 @@ render() {
         </div>
         <div className="Trapezoid-Wrapper">
           <a href = "https://www.nailynevarez.com" target="_blank" title = "NAILY NEVAREZ">
-            <img src = {shape1}/>
+            <img className = "Shape1" src = {shape1} onMouseEnter={() => this.setState({ isHover1: true})}
+        onMouseLeave={() => this.setState({ isHover1: false})}/>
           </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape2} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape3} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape4} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape5} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape6} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape7} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape8} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape9} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape10} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape11} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape12} /></a>
-          <a href = "https://www.nailynevarez.com" target="_blank" ><img src = {shape13} /></a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape2" src = {shape2} onMouseEnter={() => this.setState({ isHover2: true})}
+            onMouseLeave={() => this.setState({ isHover2: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape3" src = {shape3} onMouseEnter={() => this.setState({ isHover3: true})}
+            onMouseLeave={() => this.setState({ isHover3: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape4"src = {shape4} onMouseEnter={() => this.setState({ isHover4: true})}
+            onMouseLeave={() => this.setState({ isHover4: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape5" src = {shape5} onMouseEnter={() => this.setState({ isHover5: true})}
+            onMouseLeave={() => this.setState({ isHover5: false})} />
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape6"src = {shape6} onMouseEnter={() => this.setState({ isHover6: true})}
+            onMouseLeave={() => this.setState({ isHover6: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape7" src = {shape7} onMouseEnter={() => this.setState({ isHover7: true})}
+            onMouseLeave={() => this.setState({ isHover7: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape8" src = {shape8} onMouseEnter={() => this.setState({ isHover8: true})}
+            onMouseLeave={() => this.setState({ isHover8: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape9" src = {shape9} onMouseEnter={() => this.setState({ isHover9: true})}
+            onMouseLeave={() => this.setState({ isHover9: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape10"src = {shape10} onMouseEnter={() => this.setState({ isHover10: true})}
+            onMouseLeave={() => this.setState({ isHover10: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape11" src = {shape11} onMouseEnter={() => this.setState({ isHover11: true})}
+            onMouseLeave={() => this.setState({ isHover11: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape12" src = {shape12} onMouseEnter={() => this.setState({ isHover12: true})}
+            onMouseLeave={() => this.setState({ isHover12: false})}/>
+            </a>
+          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <img className = "Shape13" src = {shape13} onMouseEnter={() => this.setState({ isHover13: true})}
+            onMouseLeave={() => this.setState({ isHover13: false})}/>
+            </a>
         </div>
+      </div>
+      <div className = "Artist-Wrapper">
+      {this.state.isHover1 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover2 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover3 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover4 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover5 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover6 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover7 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover8 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover9 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover10 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover11 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover12 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover13 && <p className = "Name1">Naily Nevarez</p>}
       </div>
     </div>
     </div>

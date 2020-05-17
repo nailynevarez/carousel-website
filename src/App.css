@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -71,6 +72,7 @@ body {
   height: 100vh;
   width: 100vw;
   pointer-events: auto;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .opacityUp {
@@ -118,6 +120,7 @@ body {
   -moz-animation: rotateLogo 80s infinite linear;
   -o-animation: rotateLogo 80s infinite linear;
   animation: rotateLogo 80s infinite linear;
+  position: absolute;
 }
 
 @-webkit-keyframes rotateLogo {
@@ -226,7 +229,7 @@ body {
     height: auto;
   }
   .Trapezoid-Wrapper img:hover {
-    opacity: 0.2;
+    opacity: 0.3;
   }
 }
 @media (min-width: 769px) {
@@ -353,6 +356,19 @@ body {
     font-size: 1.6em;
     margin: 0 28% 0% 28%;
   }
+}
+
+.Artist-Wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: #2a2a2a;
+  justify-content: center;
+  align-content: center;
+}
+
+.Name1 {
+  align-self: center;
 }
 
 /*# sourceMappingURL=App.css.map */
