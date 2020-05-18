@@ -367,8 +367,21 @@ body {
   align-content: center;
 }
 
-.Name1 {
-  align-self: center;
+@media (min-width: 0) {
+  .Name1 {
+    font-size: 1em;
+    align-self: center;
+    color: #808080;
+    -webkit-animation: fadeIn 0.5s ease-out;
+    -moz-animation: fadeIn 0.5 ease-out;
+    -o-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+  }
+}
+@media (min-width: 769px) {
+  .Name1 {
+    font-size: 1.7em;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

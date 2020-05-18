@@ -124,19 +124,19 @@ render() {
         </div>
       </div>
       <div className = "Artist-Wrapper">
-      {this.state.isHover1 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover2 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover3 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover4 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover5 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover6 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover7 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover8 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover9 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover10 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover11 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover12 && <p className = "Name1">Naily Nevarez</p>}
-      {this.state.isHover13 && <p className = "Name1">Naily Nevarez</p>}
+      {this.state.isHover1 && <p className = "Name1">NAILY NEVAREZ</p>}
+      {this.state.isHover2 && <p className = "Name1">THOMAS NEWLANDS</p>}
+      {this.state.isHover3 && <p className = "Name1">WREN MASON-BLAUG</p>}
+      {this.state.isHover4 && <p className = "Name1">GEORDI HELMICK</p>}
+      {this.state.isHover5 && <p className = "Name1">MARCELLA ROSEN</p>}
+      {this.state.isHover6 && <p className = "Name1">ELIJAH ROTH</p>}
+      {this.state.isHover7 && <p className = "Name1">PHOEBE MALLORY</p>}
+      {this.state.isHover8 && <p className = "Name1">OLIVIA DENTON</p>}
+      {this.state.isHover9 && <p className = "Name1">FELIX NEELEMAN</p>}
+      {this.state.isHover10 && <p className = "Name1">MYA CLOVER-OWENS</p>}
+      {this.state.isHover11 && <p className = "Name1">JOSH ROLLO</p>}
+      {this.state.isHover12 && <p className = "Name1">CULLEN SHARP</p>}
+      {this.state.isHover13 && <p className = "Name1">KYLE NELSON</p>}
       </div>
     </div>
     </div>

@@ -108,7 +108,7 @@ body {
   height: 100vh;
   width: 100vw;
   pointer-events: auto;
-font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .opacityUp {
@@ -309,11 +309,22 @@ font-family: 'Barlow Condensed', sans-serif;
     color: #2a2a2a;
     justify-content: center;
     align-content: center;
-
   }
 
 
 
   .Name1 {
-    align-self: center;
+    @include sm {
+        font-size: 1em;
+        align-self: center;
+        color: #808080;
+        -webkit-animation: fadeIn .5s ease-out;
+        -moz-animation: fadeIn .5 ease-out;
+        -o-animation: fadeIn .5s ease-out;
+        animation: fadeIn .5s ease-out;
+    }
+
+    @include md {
+        font-size: 1.7em;
+    }
   }
