@@ -69,55 +69,55 @@ render() {
           <img src = {name} onClick={this.handleAboutClick.bind(this)} />
         </div>
         <div className="Trapezoid-Wrapper">
-          <a href = "https://www.nailynevarez.com" target="_blank" title = "NAILY NEVAREZ">
+          <a href = "https://www.google.com" target="_blank" title = "NAILY NEVAREZ">
             <img className = "Shape1" src = {shape1} onMouseEnter={() => this.setState({ isHover1: true})}
         onMouseLeave={() => this.setState({ isHover1: false})}/>
           </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape2" src = {shape2} onMouseEnter={() => this.setState({ isHover2: true})}
             onMouseLeave={() => this.setState({ isHover2: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape3" src = {shape3} onMouseEnter={() => this.setState({ isHover3: true})}
             onMouseLeave={() => this.setState({ isHover3: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape4"src = {shape4} onMouseEnter={() => this.setState({ isHover4: true})}
             onMouseLeave={() => this.setState({ isHover4: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape5" src = {shape5} onMouseEnter={() => this.setState({ isHover5: true})}
             onMouseLeave={() => this.setState({ isHover5: false})} />
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape6"src = {shape6} onMouseEnter={() => this.setState({ isHover6: true})}
             onMouseLeave={() => this.setState({ isHover6: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape7" src = {shape7} onMouseEnter={() => this.setState({ isHover7: true})}
             onMouseLeave={() => this.setState({ isHover7: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape8" src = {shape8} onMouseEnter={() => this.setState({ isHover8: true})}
             onMouseLeave={() => this.setState({ isHover8: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape9" src = {shape9} onMouseEnter={() => this.setState({ isHover9: true})}
             onMouseLeave={() => this.setState({ isHover9: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape10"src = {shape10} onMouseEnter={() => this.setState({ isHover10: true})}
             onMouseLeave={() => this.setState({ isHover10: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape11" src = {shape11} onMouseEnter={() => this.setState({ isHover11: true})}
             onMouseLeave={() => this.setState({ isHover11: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape12" src = {shape12} onMouseEnter={() => this.setState({ isHover12: true})}
             onMouseLeave={() => this.setState({ isHover12: false})}/>
             </a>
-          <a href = "https://www.nailynevarez.com" target="_blank" >
+          <a href = "https://www.google.com" target="_blank" >
           <img className = "Shape13" src = {shape13} onMouseEnter={() => this.setState({ isHover13: true})}
             onMouseLeave={() => this.setState({ isHover13: false})}/>
             </a>
