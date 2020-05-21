@@ -67,6 +67,9 @@ $xxl: 1900px; // Double Extra large screens / wide monitor
 
 
 
+
+
+
 @mixin on-circle($item-count, $circle-size, $item-size) {
   position: relative;
   width:  $circle-size;
@@ -201,6 +204,58 @@ body {
 
 
 
+@-webkit-keyframes blinkName  {
+  0% {
+    opacity: .2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+@-moz-keyframes blinkName  {
+  0% {
+    opacity: .2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@-o-keyframes blinkName {
+  0% {
+    opacity: .2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+@keyframes blinkName  {
+  0% {
+    opacity: .2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+
+
 
 .Wrapper {
   height: 100vh;
@@ -252,10 +307,17 @@ body {
         transition: .3s;
         margin-top: -13%;
         margin-left: -13%;
+        // -webkit-animation: blinkName 1s infinite;
+        // -moz-animation: blinkName 1s infinite;
+        // -o-animation: blinkName 1s infinite;
+        // animation: blinkName 1s infinite;
         &:hover {
           opacity: .3;
         }
       }
+
+
+
   }
 
   @include md {
@@ -303,14 +365,33 @@ body {
   }
 
   .Artist-Wrapper {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    color: #2a2a2a;
-    justify-content: center;
-    align-content: center;
+    @include sm {
+      display: none;
+    }
+    @include md {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      color: #2a2a2a;
+      justify-content: center;
+      align-content: center;
+    }
+
   }
 
+  .Artist-Wrapper-Mobile {
+    @include sm {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      color: #2a2a2a;
+      justify-content: center;
+      align-content: center;
+    }
+    @include md {
+      display: none;
+    }
+  }
 
 
   .Name1 {
@@ -318,10 +399,10 @@ body {
         font-size: 1em;
         align-self: center;
         color: #808080;
-        -webkit-animation: fadeIn .5s ease-out;
-        -moz-animation: fadeIn .5 ease-out;
-        -o-animation: fadeIn .5s ease-out;
-        animation: fadeIn .5s ease-out;
+        -webkit-animation: fadeIn .5s;
+        -moz-animation: fadeIn .5;
+        -o-animation: fadeIn .5s;
+        animation: fadeIn .5s;
     }
 
     @include md {

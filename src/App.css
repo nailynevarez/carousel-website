@@ -155,6 +155,50 @@ body {
     transform: rotate(359deg);
   }
 }
+@-webkit-keyframes blinkName {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-moz-keyframes blinkName {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-o-keyframes blinkName {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes blinkName {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 .Wrapper {
   height: 100vh;
   width: 100vw;
@@ -358,13 +402,36 @@ body {
   }
 }
 
-.Artist-Wrapper {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  color: #2a2a2a;
-  justify-content: center;
-  align-content: center;
+@media (min-width: 0) {
+  .Artist-Wrapper {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .Artist-Wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: #2a2a2a;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media (min-width: 0) {
+  .Artist-Wrapper-Mobile {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: #2a2a2a;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media (min-width: 769px) {
+  .Artist-Wrapper-Mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 0) {
@@ -372,10 +439,10 @@ body {
     font-size: 1em;
     align-self: center;
     color: #808080;
-    -webkit-animation: fadeIn 0.5s ease-out;
-    -moz-animation: fadeIn 0.5 ease-out;
-    -o-animation: fadeIn 0.5s ease-out;
-    animation: fadeIn 0.5s ease-out;
+    -webkit-animation: fadeIn 0.5s;
+    -moz-animation: fadeIn 0.5;
+    -o-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
   }
 }
 @media (min-width: 769px) {
