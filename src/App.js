@@ -204,7 +204,7 @@ render() {
           <img className = "Shape5" src = {shape5} onMouseEnter={() => this.setState({ isHover5: true})}
             onMouseLeave={() => this.setState({ isHover5: false})} />
             </a>
-          <a target="_blank" title="ELIJAH ROTH" >
+          <a href = "https://elijahroth.com/" target="_blank" title="ELIJAH ROTH" >
           <img className = "Shape6"src = {shape6} onMouseEnter={() => this.setState({ isHover6: true})}
             onMouseLeave={() => this.setState({ isHover6: false})}/>
             </a>
@@ -216,11 +216,11 @@ render() {
           <img className = "Shape8" src = {shape8} onMouseEnter={() => this.setState({ isHover8: true})}
             onMouseLeave={() => this.setState({ isHover8: false})}/>
             </a>
-          <a target="_blank" title="FELIX NEELEMAN">
+          <a href = "https://www.felixneeleman.com/" target="_blank" title="FELIX NEELEMAN">
           <img className = "Shape9" src = {shape9} onMouseEnter={() => this.setState({ isHover9: true})}
             onMouseLeave={() => this.setState({ isHover9: false})}/>
             </a>
-          <a target="_blank" title="MYA CLOVER-OWENS">
+          <a href = "https://www.myaclover.com/" target="_blank" title="MYA CLOVER">
           <img className = "Shape10"src = {shape10} onMouseEnter={() => this.setState({ isHover10: true})}
             onMouseLeave={() => this.setState({ isHover10: false})}/>
             </a>
@@ -248,7 +248,7 @@ render() {
       {this.state.isHover7 && <p className = "Name1">PHOEBE MALLORY</p>}
       {this.state.isHover8 && <p className = "Name1">OLIVIA DENTON</p>}
       {this.state.isHover9 && <p className = "Name1">FELIX NEELEMAN</p>}
-      {this.state.isHover10 && <p className = "Name1">MYA CLOVER-OWENS</p>}
+      {this.state.isHover10 && <p className = "Name1">MYA CLOVER</p>}
       {this.state.isHover11 && <p className = "Name1">JOSH ROLLO</p>}
       {this.state.isHover12 && <p className = "Name1">CULLEN SHARP</p>}
       {this.state.isHover13 && <p className = "Name1">KYLE NELSON</p>}
@@ -263,7 +263,7 @@ render() {
       {this.state.isHover7m && <p className = "Name1">PHOEBE MALLORY</p>}
       {this.state.isHover8m && <p className = "Name1">OLIVIA DENTON</p>}
       {this.state.isHover9m && <p className = "Name1">FELIX NEELEMAN</p>}
-      {this.state.isHover10m && <p className = "Name1">MYA CLOVER-OWENS</p>}
+      {this.state.isHover10m && <p className = "Name1">MYA CLOVER</p>}
       {this.state.isHover11m && <p className = "Name1">JOSH ROLLO</p>}
       {this.state.isHover12m && <p className = "Name1">CULLEN SHARP</p>}
       {this.state.isHover13m && <p className = "Name1">KYLE NELSON</p>}
