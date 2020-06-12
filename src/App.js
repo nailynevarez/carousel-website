@@ -192,7 +192,7 @@ render() {
           <img className = "Shape2" src = {shape2} onMouseEnter={() => this.setState({ isHover2: true})}
             onMouseLeave={() => this.setState({ isHover2: false})}/>
             </a>
-          <a target="_blank" title="WREN MASON-BLAUG">
+          <a href = "https://www.wrenmb.com/" target="_blank" title="WREN MASON-BLAUG">
           <img className = "Shape3" src = {shape3} onMouseEnter={() => this.setState({ isHover3: true})}
             onMouseLeave={() => this.setState({ isHover3: false})}/>
             </a>
