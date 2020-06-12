@@ -208,7 +208,7 @@ render() {
           <img className = "Shape6"src = {shape6} onMouseEnter={() => this.setState({ isHover6: true})}
             onMouseLeave={() => this.setState({ isHover6: false})}/>
             </a>
-          <a href = "https://mazitdynasty.com" target="_blank" title = "PHOEBE MALLORY">
+          <a href = "https://mazitdynasty.com/" target="_blank" title = "PHOEBE MALLORY">
           <img className = "Shape7" src = {shape7} onMouseEnter={() => this.setState({ isHover7: true})}
             onMouseLeave={() => this.setState({ isHover7: false})}/>
             </a>
@@ -224,7 +224,7 @@ render() {
           <img className = "Shape10"src = {shape10} onMouseEnter={() => this.setState({ isHover10: true})}
             onMouseLeave={() => this.setState({ isHover10: false})}/>
             </a>
-          <a href = "https://www.joshrollo.com" target="_blank" title="JOSH ROLLO" >
+          <a href = "https://www.joshrollo.com/" target="_blank" title="JOSH ROLLO" >
           <img className = "Shape11" src = {shape11} onMouseEnter={() => this.setState({ isHover11: true})}
             onMouseLeave={() => this.setState({ isHover11: false})}/>
             </a>
@@ -232,7 +232,7 @@ render() {
           <img className = "Shape12" src = {shape12} onMouseEnter={() => this.setState({ isHover12: true})}
             onMouseLeave={() => this.setState({ isHover12: false})}/>
             </a>
-          <a href = "https://www.knillustrations.com" target="_blank" title="KYLE NELSON">
+          <a href = "https://www.knillustrations.com/" target="_blank" title="KYLE NELSON">
           <img className = "Shape13" src = {shape13} onMouseEnter={() => this.setState({ isHover13: true})}
             onMouseLeave={() => this.setState({ isHover13: false})}/>
             </a>
