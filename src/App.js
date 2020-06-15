@@ -208,7 +208,7 @@ render() {
           <img className = "Shape6"src = {shape6} onMouseEnter={() => this.setState({ isHover6: true})}
             onMouseLeave={() => this.setState({ isHover6: false})}/>
             </a>
-          <a href = "https://mazitdynasty.com/" target="_blank" title = "PHOEBE MALLORY">
+          <a href = "http://mazitdynasty.com/" target="_blank" title = "PHOEBE MALLORY">
           <img className = "Shape7" src = {shape7} onMouseEnter={() => this.setState({ isHover7: true})}
             onMouseLeave={() => this.setState({ isHover7: false})}/>
             </a>
